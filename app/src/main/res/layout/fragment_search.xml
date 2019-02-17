@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/toolbarColor"
+        android:minHeight="?attr/actionBarSize"
+        android:textAlignment="center"
+        android:theme="?attr/actionBarTheme">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_title"
+            android:textColor="?attr/secondTextColor"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textsizeXNormal"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/searchBox"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacingSmall"
+        android:layout_marginHorizontal="@dimen/spacingSmall"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/border_all_round"
+            android:drawableLeft="@drawable/ic_search_hint"
+            android:drawablePadding="@dimen/spacingXSmall"
+            android:ems="15"
+            android:layout_gravity="center"
+            android:hint="@string/search_hint"
+            android:textColorHint="?attr/hintTextColor"
+            android:inputType="textPersonName"
+            android:padding="@dimen/spacingSmall" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_all_round_button"
+            android:layout_marginLeft="@dimen/spacingSmall"
+            android:layout_weight="7"
+            android:text="@string/search_search"
+            android:textColor="?attr/secondTextColor"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/spacingSmall"
+        android:weightSum="10"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:layout_marginTop="@dimen/spacingSmall">
+            <TextView
+                android:id="@+id/lblUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_user"
+                android:textSize="@dimen/textsizeXSmall"
+                android:textColor="?attr/primaryTextColor"/>
+
+            <TextView
+                android:id="@+id/tvAlertUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_alert"
+                android:textColor="?attr/primaryTextColor"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/textsizeXNormal"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/lblUser"
+                android:id="@+id/rvSearchUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_marginTop="@dimen/spacingSmall">
+            <TextView
+                android:id="@+id/lblProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_product"
+                android:textSize="@dimen/textsizeXSmall"
+                android:textColor="?attr/primaryTextColor"/>
+
+            <TextView
+                android:id="@+id/tvAlertProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_alert"
+                android:textColor="?attr/primaryTextColor"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/textsizeXNormal"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/lblProduct"
+                android:id="@+id/rvSearchProduct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

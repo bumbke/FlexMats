@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:textAlignment="center"
+        android:background="?attr/toolbarColor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_news"
+            android:textColor="?attr/secondTextColor"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textsizeXNormal"/>
+
+        <ImageButton
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacingSmall"
+            android:background="@drawable/ic_arrow_back"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="?attr/background">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_marginTop="@dimen/spacingSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Name Post"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="@dimen/textsizeNormaler"
+            android:textColor="?attr/primaryTextColor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_below="@id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacingMinor"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textsizeNormal"
+            android:textAlignment="center"
+            android:textColor="?attr/fourthText"
+            android:text="10-05-1996 8:00 AM" />
+
+        <TextView
+            android:id="@+id/tvExpiredDate"
+            android:layout_below="@id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacingMinor"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textsizeNormal"
+            android:textColor="?attr/fourthText"
+            android:textAlignment="center"
+            android:text="10-05-1996 8:00 AM" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvExpiredDate"
+            android:background="@drawable/border_all_round"
+            android:layout_marginTop="@dimen/spacingMinor"
+            android:layout_marginBottom="@dimen/spacingSmall"
+            android:layout_marginHorizontal="@dimen/spacingSmall">
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/imageHeightNormal"
+                android:src="@drawable/item1"
+                android:scaleType="centerInside"
+                android:layout_marginTop="@dimen/spacingSmall"
+                android:layout_marginBottom="@dimen/spacingSmall"
+                android:layout_marginHorizontal="@dimen/spacingSmall"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ivImage"
+                android:layout_marginHorizontal="@dimen/spacingSmall"
+                android:paddingHorizontal="@dimen/spacingMinor"
+                android:layout_marginBottom="@dimen/spacingSmall">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="@dimen/spacingSmall"
+                        android:layout_marginTop="@dimen/spacingSmall"
+                        android:textColor="?attr/fourthText"
+                        android:text="@string/dumb"
+                        android:textSize="@dimen/textsizeNormal"/>
+                </LinearLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

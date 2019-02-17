@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Theme Primary -->
+    <color name="colorPrimaryDark">#344955</color>
+    <color name="colorPrimary">#4a6572</color>
+    <color name="colorSecond">#ffffff</color>
+    <color name="colorAccent">#F9AA33</color>
+    <color name="primaryText">#000000</color>
+    <color name="secondText">#fff</color>
+    <color name="thirdText">#ff0000</color>
+    <color name="hintText">#cfcfcf</color>
+    <color name="fourthText">#616161</color>
+    <color name="background">#dcdde1</color>
+    <color name="button">#344955</color>
+    <color name="buttontrans">#00ffffff</color>
+    <color name="TextButton">#ffffff</color>
+    <color name="primaryIcon">#000000</color>
+    <color name="secondIcon">#ffffff</color>
+    <color name="thirdIcon">#ff0000</color>
+    <color name="borderbuttonColor">#4a6572</color>
+    <color name="borderStroke">#dcdde1</color>
+    <color name="borderStroke2">#000000</color>
+    <color name="borderSolid">#ffffff</color>
+
+
+    <!--Theme Secondary -->
+    <color name="colorPrimaryDark2">#000000</color>
+    <color name="colorPrimary2">#000000</color>
+    <color name="colorSecond2">#8e8e8e</color>
+    <color name="colorAccent2">#F9AA33</color>
+    <color name="primaryText2">#ffffff</color>
+    <color name="secondText2">#3d91f9</color>
+    <color name="thirdText2">#ef5656</color>
+    <color name="hintText2">#dfdfdf</color>
+    <color name="fourthText2">#dfdfdf</color>
+    <color name="background2">#545353</color>
+    <color name="button2">#eaab4c</color>
+    <color name="buttontrans2">#00ffffff</color>
+    <color name="TextButton2">#000000</color>
+    <color name="primaryIcon2">#ffffff</color>
+    <color name="secondIcon2">#000000</color>
+    <color name="thirdIcon2">#ff0000</color>
+    <color name="borderbuttonColor2">#ffffff</color>
+    <color name="borderStroke_2">#d6d6d6</color>
+    <color name="borderStroke2_2">#000000</color>
+    <color name="borderSolid2">#666666</color>
+
+
+    <color name="separation">#c6c6c6</color>
+    <color name="transSolid">#00ffffff</color>
+    <color name="primarySolid">#ffffff</color>
+    <color name="secondSolid">#505050</color>
+    <color name="primaryStroke">#dcdde1</color>
+    <color name="ic_accent">#35000000</color>
+
+    <color name="transparent">#00ffffff</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

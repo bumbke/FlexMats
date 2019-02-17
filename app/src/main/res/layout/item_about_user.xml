@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/spacingNormal"
+    android:background="?attr/background">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relayoutSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtSummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacingMinor"
+                    android:background="@drawable/line_bottom_trans"
+                    android:text="@string/about_user_summary"
+                    android:textColor="?attr/primaryTextColor"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/textsizeXNormal"/>
+
+                <TextView
+                    android:id="@+id/tvSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtSummary"
+                    android:layout_marginHorizontal="@dimen/spacingLarge"
+                    android:gravity="center"
+                    android:text="I've work as a CG artist for near 10 years"
+                    android:maxLines="3"
+                    android:textColor="?attr/fourthText"
+                    android:padding="@dimen/spacingSmall"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/textsizeNormal"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relayoutleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacingNormal"
+                android:layout_marginLeft="@dimen/spacingLarge"
+                android:layout_below="@id/relayoutSummary">
+
+                <TextView
+                    android:id="@+id/lblDoB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_user_dob"
+                    android:textColor="?attr/primaryTextColor"
+                    android:background="@drawable/line_bottom_trans"
+                    android:textSize="@dimen/textsizeXNormal"/>
+
+                <TextView
+                    android:id="@+id/tvDoB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblDoB"
+                    android:layout_marginTop="@dimen/spacingSmall"
+                    android:text="10-05-1996"
+                    android:gravity="bottom"
+                    android:textColor="?attr/fourthText"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/textsizeNormal"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relayoutright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacingNormal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/spacingLarge"
+                android:layout_below="@id/relayoutSummary">
+
+                <TextView
+                    android:id="@+id/lblGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_user_gender"
+                    android:layout_alignParentRight="true"
+                    android:textColor="?attr/primaryTextColor"
+                    android:background="@drawable/line_bottom_trans"
+                    android:textSize="@dimen/textsizeXNormal"/>
+
+                <TextView
+                    android:id="@+id/tvGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblGender"
+                    android:layout_marginTop="@dimen/spacingSmall"
+                    android:drawableLeft="@drawable/ic_gender_female"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="@dimen/spacingMinor"
+                    android:text="Nam"
+                    android:gravity="bottom"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="?attr/fourthText"
+                    android:textSize="@dimen/textsizeNormal"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relayoutJobs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relayoutleft"
+                android:layout_marginTop="@dimen/spacingLarge">
+
+                <TextView
+                    android:id="@+id/txtJobs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacingMinor"
+                    android:background="@drawable/line_bottom_trans"
+                    android:text="@string/about_user_jobs"
+                    android:textColor="?attr/primaryTextColor"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/textsizeXNormal"/>
+
+                <TextView
+                    android:id="@+id/tvJobs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtJobs"
+                    android:layout_marginTop="@dimen/spacingSmall"
+                    android:layout_marginHorizontal="@dimen/spacingLarge"
+                    android:text="UX/UI Designer"
+                    android:gravity="center"
+                    android:textColor="?attr/fourthText"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/textsizeNormal"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relayoutInterest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relayoutJobs"
+                android:layout_marginTop="@dimen/spacingNormal">
+
+                <TextView
+                    android:id="@+id/txtInterest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacingMinor"
+                    android:background="@drawable/line_bottom_trans"
+                    android:text="@string/about_user_interest"
+                    android:textColor="?attr/primaryTextColor"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/textsizeXNormal"/>
+
+                <TextView
+                    android:id="@+id/tvInterest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtInterest"
+                    android:layout_marginTop="@dimen/spacingSmall"
+                    android:layout_marginHorizontal="@dimen/spacingLarge"
+                    android:text="2D Digital"
+                    android:gravity="center"
+                    android:textColor="?attr/fourthText"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/textsizeNormal"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

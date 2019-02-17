@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_post_product_header"
+        android:textColor="?attr/secondTextColor"
+        android:textSize="@dimen/textsizeNormal"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:padding="@dimen/spacingSmall"
+        android:background="?attr/toolbarColor"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:max="100"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="-7dp"
+        android:layout_marginBottom="-7dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/progressBar"
+        android:id="@+id/relayoutImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:scaleType="fitXY"/>
+
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/spacingSmall"
+            android:padding="@dimen/spacingSmall"
+            android:text="Select Image"
+            android:textColor="?attr/buttonTextColor"
+            android:background="?attr/buttonColor"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relayoutImage">
+
+        <RelativeLayout
+            android:id="@+id/relayoutInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relayoutImage"
+            android:layout_margin="@dimen/spacingSmall">
+
+            <TextView
+                android:id="@+id/txtLabelTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:text="@string/dialog_post_product_title"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="@dimen/textsizeNormal"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLabelTitle"
+                android:hint="@string/dialog_post_product_title_hint"
+                android:textColorHint="?attr/hintTextColor"/>
+
+            <TextView
+                android:id="@+id/txtTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edTitle"
+                android:text="@string/dialog_post_product_tag"
+                android:textSize="@dimen/textsizeNormal"
+                android:textStyle="bold"
+                android:textColor="?attr/primaryTextColor"/>
+
+            <LinearLayout
+                android:id="@+id/gridTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/txtTag"
+                android:layout_marginVertical="@dimen/spacingSmall">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="9">
+
+                    <CheckedTextView
+                        android:id="@+id/ctvDigital2D"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Digital 2D"
+                        android:checked="true"/>
+
+                    <CheckedTextView
+                        android:id="@+id/ctvDigital3D"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Digital 3D"
+                        android:checked="true"/>
+
+                    <CheckedTextView
+                        android:id="@+id/ctvConceptArt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Concept Art"
+                        android:checked="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/spacingXMinor"
+                    android:layout_weight="9">
+
+                    <CheckedTextView
+                        android:id="@+id/ctvPhotorealism"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Photorealism"
+                        android:checked="true" />
+
+                    <CheckedTextView
+                        android:id="@+id/ctvIllustration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Illustration"
+                        android:checked="true" />
+
+                    <CheckedTextView
+                        android:id="@+id/ctvOther"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Other"
+                        android:checked="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gridTag"
+                android:text="@string/dialog_post_product_point"
+                android:textSize="@dimen/textsizeNormal"
+                android:textStyle="bold"
+                android:textColor="?attr/primaryTextColor"/>
+
+            <Spinner
+                android:id="@+id/spinnerPoint"
+                android:layout_below="@id/txtPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacingXMinor"
+                android:layout_marginBottom="@dimen/spacingXMinor"
+                android:textColor="?attr/primaryiconColor"/>
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerPoint"
+                android:text="@string/dialog_post_product_description"
+                android:textSize="@dimen/textsizeNormal"
+                android:textStyle="bold"
+                android:textColor="?attr/primaryTextColor"/>
+
+            <EditText
+                android:id="@+id/edDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDescription"
+                android:hint="@string/dialog_post_product_description_hint"
+                android:textColorHint="?attr/hintTextColor"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:enabled="true"
+                android:minLines="3"
+                android:maxLines="5"
+                android:paddingLeft="@dimen/spacingSmall"
+                android:paddingTop="@dimen/spacingXMinor"
+                android:paddingBottom="@dimen/spacingXMinor"
+                android:isScrollContainer="true"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

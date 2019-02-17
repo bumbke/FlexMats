@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/spacingMinor">
+
+        <RelativeLayout
+            android:id="@+id/layoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_top">
+
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="@dimen/spacingMinor"
+                android:backgroundTint="#00ffffff"
+                android:inputType="textEmailAddress"
+                android:hint="@string/login_hint_email"
+                android:textColorHint="?attr/hintTextColor"
+                android:textColor="?attr/secondTextColor"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutPassword"
+            android:layout_below="@+id/layoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bottom">
+
+            <EditText
+                android:id="@+id/edPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_key"
+                android:drawablePadding="@dimen/spacingMinor"
+                android:backgroundTint="#00ffffff"
+                android:inputType="textPassword"
+                android:hint="@string/login_hint_pass"
+                android:textColorHint="?attr/hintTextColor"
+                android:textColor="?attr/secondTextColor"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvForgot"
+            android:layout_below="@id/layoutPassword"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacingNormal"
+            android:text="@string/login_forget"
+            android:textColor="?attr/secondTextColor"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_below="@id/tvForgot"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacingSmall"
+            android:background="?attr/buttonColor"
+            android:text="@string/login_login"
+            android:textColor="?attr/secondTextColor"/>
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacingSmall"
+            android:layout_below="@id/btnLogin"
+            android:layout_centerInParent="true"
+            android:text="@string/login_register"
+            android:textSize="@dimen/textsizeNormal"
+            android:textColor="?attr/secondTextColor"/>
+    </RelativeLayout>
+</RelativeLayout>

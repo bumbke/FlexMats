@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_seperation">
+
+    <RelativeLayout
+        android:id="@+id/layoutLeft"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:padding="@dimen/spacingSmall"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/item1"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacingSmall"
+        android:layout_toRightOf="@id/layoutLeft">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of Post"
+            android:textColor="?attr/primaryTextColor"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsizeNormal"/>
+
+        <RelativeLayout
+            android:id="@+id/layoutDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:background="@drawable/line_bottom">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23.07.1996"
+                android:textColor="?attr/fourthText"/>
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutDateTime"
+            android:text="Content"
+            android:textColor="?attr/fourthText"/>
+    </RelativeLayout>
+</RelativeLayout>

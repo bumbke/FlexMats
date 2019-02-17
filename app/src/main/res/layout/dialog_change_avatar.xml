@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_avatar_title"
+        android:textColor="?attr/secondTextColor"
+        android:textSize="@dimen/textsizeNormal"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:padding="@dimen/spacingSmall"
+        android:background="?attr/toolbarColor"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/header"
+        android:id="@+id/relayoutImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:max="100"
+            android:layout_below="@+id/ivImage"
+            android:layout_marginTop="-7dp"
+            android:layout_marginBottom="-7dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBar"
+            android:layout_margin="@dimen/spacingNormal"
+            android:padding="@dimen/spacingSmall"
+            android:text="@string/change_avatar_select"
+            android:textColor="?attr/secondTextColor"
+            android:background="?attr/buttonColor"/>
+    </RelativeLayout>
+
+</RelativeLayout>

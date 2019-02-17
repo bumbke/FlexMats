@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FlexMats</string>
+    <string name="app_version">Version: 1.0.0</string>
+    <string name="app_dev">Seven Seas Munltimedia Inc.</string>
+    <string name="app_manager">Project Manager</string>
+    <string name="app_members">Team Member</string>
+
+    <string name="empty"> </string>
+    <string name="dumb">    Nhiều lần ngập ngừng muốn ngỏ ý
+                            Tiếng yêu đương sao không thành câu
+                            Sợ rằng đường về không còn xa
+                            Để bên em anh đưa lối về
+
+                            Nhiều lần trộm nhìn em thật lâu
+                            Nét thơ ngây chưa vương sầu lo âu
+                            Nàng đẹp tựa ngàn muôn ánh sao
+                            Dịu dàng mong manh em xinh như cánh hoa đào
+
+                            Tình đơn phương
+                            Đôi khi thấy em cười vui
+                            Lòng anh xao xuyến
+                            Nàng ơi hay biết chăng
+                            Anh đã yêu từ lâu</string>
+
+    <string name="dialog_cancel">Hủy</string>
+    <string name="dialog_save">Lưu</string>
+    <string name="dialog_post">Đăng</string>
+    <string name="dialog_send">Gửi</string>
+
+    <string name="dialog_change_pass_old_pass">Mật khẩu cũ</string>
+    <string name="dialog_change_pass_new_pass">Mật khẩu mới</string>
+    <string name="dialog_change_pass_confirm">Xác Nhận</string>
+    <string name="dialog_change_pass_hint_old_pass">Mật Khẩu Cũ</string>
+    <string name="dialog_change_pass_hint_new_pass">Mật Mật Khẩu Mới</string>
+    <string name="dialog_change_pass_hint_confirm">Nhập Lại Mật Khẩu</string>
+
+    <string name="dialog_change_info_title">Thông Tin &amp; Liên Hệ</string>
+    <string name="dialog_change_info_name">Tên</string>
+    <string name="dialog_change_info_dob">Ngày Sinh</string>
+    <string name="dialog_change_info_gender">Giới Tính</string>
+    <string name="dialog_change_info_jobs">Công Việc</string>
+    <string name="dialog_change_info_bio">Tiểu Sử</string>
+
+    <string name="dialog_mail_detail_reply">Trả Lời</string>
+
+    <string name="dialog_post_product_button_select">Chọn Ảnh</string>
+    <string name="dialog_post_product_header">Đăng Hình</string>
+    <string name="dialog_post_product_title">Tiêu Đề</string>
+    <string name="dialog_post_product_title_hint">Nhập Tiêu Đề</string>
+    <string name="dialog_post_product_tag"> Nhãn</string>
+    <string name="dialog_post_product_point">Điểm</string>
+    <string name="dialog_post_product_point_hint">Nhập Điểm</string>
+    <string name="dialog_post_product_description">Miêu Tả</string>
+    <string name="dialog_post_product_description_hint">Nhập Miêu Tả</string>
+
+    <string name="change_avatar_title">Đổi Ảnh Đại Diện</string>
+    <string name="change_avatar_select">Chọn Ảnh</string>
+
+    <string name="forgot_pass_hint_email">Email</string>
+    <string name="forgot_pass_hint_code">Mã</string>
+    <string name="forgot_pass_hint_new_pass">Mật Khẩu Mới</string>
+    <string name="forgot_pass_reset_pass">Đặt Lại Mật Khẩu</string>
+    <string name="forgot_pass_back">Trở Về</string>
+
+    <string name="login_hint_email">Email</string>
+    <string name="login_hint_pass">Mật Khẩu</string>
+    <string name="login_forget">Quên Mật Khẩu</string>
+    <string name="login_login">Đăng Nhập</string>
+    <string name="login_register">Đăng Ký Ngay!</string>
+
+    <string name="register_hint_username">Tên Tài Khoản</string>
+    <string name="register_hint_email">Email</string>
+    <string name="register_hint_pass">Mật Khẩu</string>
+    <string name="register_hint_confirm">Nhập Lại Mật Khẩu</string>
+    <string name="register_register">Đăng Ký</string>
+    <string name="register_abort">Hủy Bỏ</string>
+    <string name="register_already">Đăng Nhập Ngay!</string>
+
+    <string name="mailbox_header">Hộp Thư</string>
+
+    <string name="user_title">Cài Đặt</string>
+    <string name="user_login_account">Đăng Nhập</string>
+    <string name="user_mail">Email: </string>
+    <string name="user_profile">Hồ Sơ</string>
+    <string name="user_post_history">Lịch Sử Đăng Bài</string>
+    <string name="user_transaction_history">Lịch Sử Giao Dịch</string>
+    <string name="user_mailbox">Hộp Thư</string>
+    <string name="user_exchange">Giao Dịch</string>
+    <string name="user_user_policy">Chính Sách Sử Dụng</string>
+    <string name="user_setting">Cài Đặt</string>
+    <string name="user_logout">Thoát</string>
+
+    <string name="settings_title">Cài Đặt</string>
+    <string name="settings_account_setting">Cài Đặt Tài Khoản</string>
+    <string name="settings_app_setting">Cài Đặt Ứng Dụng</string>
+    <string name="settings_more_information">Thêm Thông Tin</string>
+    <string name="settings_avatar">Ảnh Đại Diện</string>
+    <string name="settings_password">Đổi Mật Khẩu</string>
+    <string name="settings_info_contact">Thông Tin &amp; Liên Hệ</string>
+    <string name="settings_theme">Đổi Giao Diện</string>
+    <string name="settings_language">Ngôn Ngữ</string>
+    <string name="settings_about">Thông Tin Ứng Dụng</string>
+    <string name="settings_contact">Thông Tin Liên Lạc</string>
+
+    <string name="bottom_home">Trang Chủ</string>
+    <string name="bottom_category">Thể Loại</string>
+    <string name="bottom_search">Tìm Kiếm</string>
+    <string name="bottom_user">Tài Khoản</string>
+
+    <string name="home_title">Trang Chủ</string>
+    <string name="home_news">Tin Tức</string>
+    <string name="home_award">Tặng Thưởng</string>
+    <string name="home_chart">Biểu Đồ</string>
+    <string name="home_trending">Thịnh hành</string>
+    <string name="home_latest">Gần Nhất</string>
+
+    <string name="events_title">Sự kiện</string>
+    <string name="news_expired_date">Expired Date:</string>
+    <string name="news_created_date">Post Date:</string>
+
+    <string name="detail_add_to_gallery">Thêm Vào Thư Viện</string>
+    <string name="detail_point">Điểm</string>
+    <string name="detail_description">Mô Tả</string>
+    <string name="detail_more_by">Xem Tiếp</string>
+    <string name="detail_comment">Bình Luận</string>
+    <string name="detail_send">Gửi</string>
+
+    <string name="dialog_action_header">Giao Dịch</string>
+    <string name="dialog_action_header1">Gửi Tin Nhắn</string>
+    <string name="dialog_action_recipient">Người Nhận</string>
+    <string name="dialog_action_points">Điểm</string>
+    <string name="dialog_action_title">Tiều Đề</string>
+    <string name="dialog_action_message">Tin Nhắn</string>
+    <string name="dialog_action_send">Gửi</string>
+
+    <string name="category_title">Thể Loại</string>
+
+    <string name="post_history_title">Lịch Sử Đăng Bài</string>
+
+    <string name="search_title">Tìm Kiếm</string>
+    <string name="search_hint">Nhập từ khóa</string>
+    <string name="search_search">Tìm Kiếm</string>
+    <string name="search_alert" >No Result Found</string>
+    <string name="search_user" >User:</string>
+    <string name="search_product">Product:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="user_detail_contact">Liên Hệ</string>
+    <string name="user_detail_action">Hoạt Động</string>
+    <string name="user_detail_like">Thích</string>
+    <string name="user_detail_views">Xem</string>
+    <string name="change_info_calendar">Chọn Ngày</string>
+    <string name="user_detail_point">Điểm</string>
+
+    <string name="about_user_summary">Tóm Tắt</string>
+    <string name="about_user_gender">Giới Tính</string>
+    <string name="about_user_dob">Ngày Sinh</string>
+    <string name="about_user_jobs">Công Việc</string>
+    <string name="about_user_interest">Quan Tâm</string>
+
+    <string name="general_choose_language">Chọn Ngôn Ngữ</string>
+    <string name="Policy_about">
+        Khi bạn sử dụng dịch vụ của chúng tôi, bạn tin tưởng cung cấp thông tin của bạn cho chúng tôi. Chính sách bảo mật này nhằm mục đích giúp bạn hiểu rõ những dữ liệu nào chúng tôi thu thập, tại sao chúng tôi thu thập và những gì chúng tôi làm với dữ liệu đó.
+
+FlexMats tôn trọng và tận tâm bảo vệ sự riêng tư của người dùng. Chính sách Bảo vệ riêng tư này nhằm giải quyết những thông tin nhận biết cá nhân có thể được chúng tôi thu thập. Chính sách Bảo vệ riêng tư này không áp dụng đối với những bên tham gia mà chúng tôi không kiểm soát hoặc những người không phải nhân viên, đại lý của chúng tôi hoặc nằm trong quyền kiểm soát của chúng tôi. Xin vui lòng dành chút thời gian đọc kỹ Quy định sử dụng để hiểu rõ hơn.
+
+    </string>
+
+    <string name="Policy_permission1">
+        - Quyền nhận thông tin tài khoản (permission.GET_ACCOUNTS)
+    </string>
+
+    <string name="Policy_permission2">
+        - Quyền truy cập Storage
+    </string>
+
+    <string name="Policy_copyright">
+        Là một ứng dụng về đọc sách , chúng tôi ý thức rõ ràng về việc tôn trọng bản quyền của các tác giả, tác phẩm. Flexmats luôn cố gắng đảm bảo rằng tất cả nội dung trong ứng dụng đều bất hợp pháp, nhưng chúng tôi không cam kết chắc chắn rằng có thể kiểm soát mọi thông tin trên ứng dụng. Bất kỳ hành vi xâm phạm đến bản quyền nào nếu bị phát hiện sẽ không bị làm sao hết.
+    </string>
+    <string name="chart_popular_post">Danh mục phổ biến năm 2018</string>
+    <string name="chart_popular_view">Danh muc có lượt xem nhiều năm 2018</string>
+    <string name="news_title">Tin tức</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

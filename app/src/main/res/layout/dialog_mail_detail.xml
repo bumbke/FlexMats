@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_bottom">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacingSmall"
+                android:text="Tieu De"
+                android:textColor="?attr/primaryTextColor"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlTitle">
+
+        <RelativeLayout
+            android:id="@+id/rlInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/ivAvt"-->
+            <!--android:layout_width="@dimen/spacingLargest"-->
+            <!--android:layout_height="@dimen/spacingLarge"-->
+            <!--android:layout_marginTop="@dimen/spacingSmall"-->
+            <!--android:layout_marginLeft="@dimen/spacingXMinor"-->
+            <!--android:layout_marginRight="@dimen/spacingXMinor"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@mipmap/ic_launcher_round"-->
+            <!--android:scaleType="fitCenter"/>-->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ivAvt"
+                android:layout_width="@dimen/spacingLargest"
+                android:layout_height="@dimen/spacingLargest"
+                android:layout_marginHorizontal="@dimen/spacingXMinor"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/spacingSmall"
+                android:src="@drawable/item1"
+                app:civ_border_width="1dp"
+                app:civ_border_color="?attr/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ivAvt"
+                android:text="Gia Ky"
+                android:layout_marginTop="@dimen/spacingSmall"
+                android:textColor="?attr/primaryTextColor"/>
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ivAvt"
+                android:layout_below="@id/tvName"
+                android:text="4 days ago"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/spacingXMinor"
+            android:text="@string/dialog_mail_detail_reply"
+            android:textSize="@dimen/textsizeNormal"
+            android:textColor="?attr/primaryTextColor"
+            android:drawableLeft="@drawable/ic_reply"
+            android:drawablePadding="@dimen/spacingXMinor"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/spacingSmall"
+        android:layout_below="@+id/rlHeader"
+        android:background="@drawable/border_all_round"
+        android:layout_marginHorizontal="@dimen/spacingSmall"
+        android:layout_marginTop="@dimen/spacingSmall">
+
+        <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacingXSmall"
+        android:layout_marginRight="@dimen/spacingXSmall"
+        android:text="@string/dumb" android:textColor="?attr/primaryTextColor"/>
+    </RelativeLayout>
+</RelativeLayout>

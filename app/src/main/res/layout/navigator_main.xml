@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?attr/toolbarColor"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".55"
+                android:background="@android:color/transparent"
+                android:drawablePadding="@dimen/spacingXMinor"
+                android:drawableTop="@drawable/ic_home_black_24dp"
+                android:paddingTop="@dimen/spacingXMinor"
+                android:text="@string/home_title"
+                android:textColor="?attr/secondTextColor"
+                android:textAllCaps="false"
+                android:textSize="@dimen/textsizeNormal"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btnCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".55"
+                android:background="@android:color/transparent"
+                android:drawablePadding="@dimen/spacingXMinor"
+                android:drawableTop="@drawable/ic_category"
+                android:paddingTop="@dimen/spacingXMinor"
+                android:text="@string/bottom_category"
+                android:textAllCaps="false"
+                android:textSize="@dimen/textsizeNormal"
+                android:textColor="?attr/secondTextColor"
+                tools:ignore="HardcodedText" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".6"
+                />
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".55"
+                android:background="@android:color/transparent"
+                android:drawablePadding="@dimen/spacingXMinor"
+                android:drawableTop="@drawable/ic_search"
+                android:paddingTop="@dimen/spacingXMinor"
+                android:text="@string/bottom_search"
+                android:textAllCaps="false"
+                android:textSize="@dimen/textsizeNormal"
+                android:textColor="?attr/secondTextColor"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btnAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".55"
+                android:background="@android:color/transparent"
+                android:drawablePadding="@dimen/spacingXMinor"
+                android:drawableTop="@drawable/ic_account_circle"
+                android:paddingTop="@dimen/spacingXMinor"
+                android:text="@string/bottom_user"
+                android:textAllCaps="false"
+                android:textSize="@dimen/textsizeNormal"
+                android:textColor="?attr/secondTextColor"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

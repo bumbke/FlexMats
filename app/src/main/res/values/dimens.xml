@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="spacingMinor">2dp</dimen>
+    <dimen name="spacingXMinor">5dp</dimen>
+    <dimen name="spacingSmall">10dp</dimen>
+    <dimen name="spacingXSmall">15dp</dimen>
+    <dimen name="spacingNormal">20dp</dimen>
+    <dimen name="spacingXNormal">25dp</dimen>
+    <dimen name="spacingLarge">30dp</dimen>
+    <dimen name="spacingLarger">40dp</dimen>
+    <dimen name="spacingLargest">50dp</dimen>
+    <dimen name="spacingXLargest">80dp</dimen>
+    <dimen name="spacingMax">100dp</dimen>
+
+    <!--Text size-->
+    <dimen name="textsizeSmall">12sp</dimen>
+    <dimen name="textsizeXSmall">14sp</dimen>
+    <dimen name="textsizeNormal">15sp</dimen>
+    <dimen name="textsizeNormaler">18sp</dimen>
+    <dimen name="textsizeXNormal">20sp</dimen>
+    <dimen name="textsizeLarge">30sp</dimen>
+
+    <!--Image size-->
+
+    <dimen name="imageHeightSmall">70dp</dimen>
+    <dimen name="imageWidthSmall">125dp</dimen>
+
+    <dimen name="imageHeightXSmall">100dp</dimen>
+    <dimen name="imageWidthXSmall">178dp</dimen>
+
+    <dimen name="imageHeightNormal">150dp</dimen>
+    <dimen name="imageWidthNormal">267dp</dimen>
+
+    <dimen name="imageHeightXNormal">180dp</dimen>
+    <dimen name="imageWidthXNormal">320dp</dimen>
+
+    <dimen name="imageHeightLarge">220dp</dimen>
+    <dimen name="imageWidthLarge">391dp</dimen>
+
+    <dimen name="avatarSmall">50dp</dimen>
+    <dimen name="avatarXSmall">64dp</dimen>
+    <dimen name="avatarLarge">120dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

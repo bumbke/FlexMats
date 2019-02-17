@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/header1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_action_header1"
+        android:textColor="?attr/secondTextColor"
+        android:textSize="@dimen/textsizeNormal"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:padding="@dimen/spacingSmall"
+        android:background="?attr/toolbarColor"/>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacingNormal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:paddingStart="@dimen/spacingSmall"
+            android:textColor="?attr/primaryTextColor"
+            android:text="@string/dialog_action_title"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textsizeNormal"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/edTitle"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacingXMinor"
+            android:paddingLeft="@dimen/spacingSmall"
+            android:paddingTop="@dimen/spacingXMinor"
+            android:paddingBottom="@dimen/spacingXMinor"
+            android:layout_gravity="center"
+            android:background="@drawable/border_all_round"
+            android:textSize="@dimen/textsizeNormal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:paddingStart="@dimen/spacingSmall"
+            android:textColor="?attr/primaryTextColor"
+            android:text="@string/dialog_action_message"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/textsizeNormal"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/edMessage"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacingXMinor"
+            android:background="@drawable/border_all_round"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:enabled="true"
+            android:minLines="4"
+            android:maxLines="4"
+            android:paddingLeft="@dimen/spacingSmall"
+            android:paddingTop="@dimen/spacingXMinor"
+            android:paddingBottom="@dimen/spacingXMinor"
+            android:isScrollContainer="true"
+            android:gravity="top"
+            android:textSize="@dimen/textsizeNormal" />
+    </LinearLayout>
+</LinearLayout>

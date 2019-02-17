@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="Base.Theme.App" parent="Theme.AppCompat.Light.DarkActionBar">
+
+
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+  </style>
+
+  <style name="Theme.App.Lilac" parent="Base.Theme.App">
+    <item name="primaryColor">@color/colorPrimary</item>
+    <item name="secondColor">@color/colorSecond</item>
+    <item name="accentColor">@color/colorAccent</item>
+    <item name="toolbarColor">@color/colorPrimary</item>
+    <item name="background">@color/background</item>
+    <item name="primaryTextColor">@color/primaryText</item>
+    <item name="secondTextColor">@color/secondText</item>
+    <item name="thirdTextColor">@color/thirdText</item>
+    <item name="fourthText">@color/fourthText</item>
+    <item name="hintTextColor">@color/hintText</item>
+    <item name="primaryiconColor">@color/primaryIcon</item>
+    <item name="secondiconColor">@color/secondIcon</item>
+    <item name="thirdiconColor">@color/thirdIcon</item>
+    <item name="buttonColor">@color/button</item>
+    <item name="secondbuttonColor">@color/buttontrans</item>
+    <item name="buttonTextColor">@color/TextButton</item>
+    <item name="borderbuttonColor">@color/borderbuttonColor</item>
+    <item name="borderStroke">@color/borderStroke</item>
+    <item name="borderStroke2">@color/borderStroke2</item>
+    <item name="borderSolid">@color/borderSolid</item>
+  </style>
+
+  <style name="Theme.App.Black" parent="Base.Theme.App">
+    <item name="primaryColor">@color/colorPrimary2</item>
+    <item name="secondColor">@color/colorSecond2</item>
+    <item name="accentColor">@color/colorAccent2</item>
+    <item name="toolbarColor">@color/colorPrimary2</item>
+    <item name="background">@color/background2</item>
+    <item name="primaryTextColor">@color/primaryText2</item>
+    <item name="secondTextColor">@color/secondText2</item>
+    <item name="thirdTextColor">@color/thirdText2</item>
+    <item name="fourthText">@color/fourthText2</item>
+    <item name="hintTextColor">@color/hintText2</item>
+    <item name="primaryiconColor">@color/primaryIcon2</item>
+    <item name="secondiconColor">@color/secondIcon2</item>
+    <item name="thirdiconColor">@color/thirdIcon2</item>
+    <item name="buttonColor">@color/button2</item>
+    <item name="secondbuttonColor">@color/buttontrans2</item>
+    <item name="buttonTextColor">@color/TextButton2</item>
+    <item name="borderbuttonColor">@color/borderbuttonColor2</item>
+    <item name="borderStroke">@color/borderStroke_2</item>
+    <item name="borderStroke2">@color/borderStroke2_2</item>
+    <item name="borderSolid">@color/borderSolid2</item>
+  </style>
+
+
+</resources>

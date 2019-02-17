@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FlexMats</string>
+    <string name="app_version">Version: 1.0.0</string>
+    <string name="app_dev">Seven Seas Munltimedia Inc.</string>
+    <string name="app_manager">Project Manager</string>
+    <string name="app_members">Team Member</string>
+
+    <string name="empty"> </string>
+    <string name="dumb">    Nhiều lần ngập ngừng muốn ngỏ ý
+                            Tiếng yêu đương sao không thành câu
+                            Sợ rằng đường về không còn xa
+                            Để bên em anh đưa lối về
+
+                            Nhiều lần trộm nhìn em thật lâu
+                            Nét thơ ngây chưa vương sầu lo âu
+                            Nàng đẹp tựa ngàn muôn ánh sao
+                            Dịu dàng mong manh em xinh như cánh hoa đào
+
+                            Tình đơn phương
+                            Đôi khi thấy em cười vui
+                            Lòng anh xao xuyến
+                            Nàng ơi hay biết chăng
+                            Anh đã yêu từ lâu</string>
+
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_save">Save</string>
+    <string name="dialog_post">Post</string>
+    <string name="dialog_send">Send</string>
+
+    <string name="dialog_change_pass_old_pass">Old Password</string>
+    <string name="dialog_change_pass_new_pass">New Password</string>
+    <string name="dialog_change_pass_confirm">Confirm</string>
+    <string name="dialog_change_pass_hint_old_pass">Enter current Password</string>
+    <string name="dialog_change_pass_hint_new_pass">Enter New Password</string>
+    <string name="dialog_change_pass_hint_confirm">Re-enter Password</string>
+
+    <string name="dialog_change_info_title">Information</string>
+    <string name="dialog_change_info_name">Name</string>
+    <string name="dialog_change_info_dob">Date of Birth</string>
+    <string name="dialog_change_info_gender">Gender</string>
+    <string name="dialog_change_info_jobs">Jobs</string>
+    <string name="dialog_change_info_bio">Summary</string>
+
+    <string name="dialog_mail_detail_reply">Reply</string>
+
+    <string name="dialog_post_product_button_select">Select Image</string>
+    <string name="dialog_post_product_header">post product</string>
+    <string name="dialog_post_product_title">Title</string>
+    <string name="dialog_post_product_title_hint">Enter Title</string>
+    <string name="dialog_post_product_tag">Tag</string>
+    <string name="dialog_post_product_point">Point</string>
+    <string name="dialog_post_product_point_hint">Enter Point</string>
+    <string name="dialog_post_product_description">Description</string>
+    <string name="dialog_post_product_description_hint">Enter Description</string>
+
+    <string name="change_avatar_title">Change Avatar</string>
+    <string name="change_avatar_select">Select Image</string>
+
+    <string name="forgot_pass_hint_email">Email</string>
+    <string name="forgot_pass_hint_code">Code</string>
+    <string name="forgot_pass_hint_new_pass">New Pass</string>
+    <string name="forgot_pass_reset_pass">RESET PASSWORD</string>
+    <string name="forgot_pass_back">Back</string>
+
+    <string name="login_hint_email">Email</string>
+    <string name="login_hint_pass">Password</string>
+    <string name="login_forget">Forgot Password</string>
+    <string name="login_login">LOGIN</string>
+    <string name="login_register">Not Registered? Register Now!</string>
+
+    <string name="register_hint_username">UserName</string>
+    <string name="register_hint_email">Email</string>
+    <string name="register_hint_pass">Password</string>
+    <string name="register_hint_confirm">Re-Password</string>
+    <string name="register_register">REGISTER</string>
+    <string name="register_abort">ABORT</string>
+    <string name="register_already">Already Registered? Login now!</string>
+
+    <string name="mailbox_header">Mailbox</string>
+
+    <string name="user_title">Setting</string>
+    <string name="user_login_account">Account ID:</string>
+    <string name="user_mail">Email:</string>
+    <string name="user_profile">Profile</string>
+    <string name="user_post_history">Post History</string>
+    <string name="user_transaction_history">Transaction History</string>
+    <string name="user_mailbox">Mailbox</string>
+    <string name="user_exchange">Exchange</string>
+    <string name="user_user_policy">User Policy</string>
+    <string name="user_setting">Settings</string>
+    <string name="user_logout">Logout</string>
+
+    <string name="settings_title">Setting</string>
+    <string name="settings_account_setting">ACCOUNT SETTINGS</string>
+    <string name="settings_app_setting">APP SETTINGS</string>
+    <string name="settings_more_information">MORE INFORMATION</string>
+    <string name="settings_avatar">Avatar</string>
+    <string name="settings_password">Change Password</string>
+    <string name="settings_info_contact">Information</string>
+    <string name="settings_theme">Change Theme</string>
+    <string name="settings_language">Change Language</string>
+    <string name="settings_about">About App</string>
+    <string name="settings_contact">Contact Us</string>
+
+    <string name="bottom_home">Home</string>
+    <string name="bottom_category">Category</string>
+    <string name="bottom_search">Search</string>
+    <string name="bottom_user">User</string>
+
+    <string name="home_title">Home</string>
+    <string name="home_news">News</string>
+    <string name="home_award">Events</string>
+    <string name="home_chart">Chart</string>
+    <string name="home_trending">TRENDING</string>
+    <string name="home_latest">LATEST</string>
+
+    <string name="chart_popular_post">POPULAR POST CATEGORY ON 2018</string>
+    <string name="chart_popular_view">POPULAR CATEGORY VIEWED ON 2018</string>
+
+    <string name="news_title">News</string>
+    <string name="events_title">Events</string>
+    <string name="news_expired_date">Expired Date:</string>
+    <string name="news_created_date">Post Date:</string>
+
+    <string name="detail_add_to_gallery">ADD TO GALLERY</string>
+    <string name="detail_point">POINT</string>
+    <string name="detail_description">Descriptions</string>
+    <string name="detail_more_by">More by</string>
+    <string name="detail_comment">Comment</string>
+    <string name="detail_send">Send</string>
+
+    <string name="dialog_action_header">EXCHANGE</string>
+    <string name="dialog_action_header1">SEND MESSAGE</string>
+    <string name="dialog_action_recipient">Recipient</string>
+    <string name="dialog_action_points">Points</string>
+    <string name="dialog_action_title">Title</string>
+    <string name="dialog_action_message">Message</string>
+    <string name="dialog_action_send">SEND</string>
+
+    <string name="category_title">Category</string>
+
+    <string name="post_history_title">Post History</string>
+
+    <string name="search_title">Search</string>
+    <string name="search_hint">Enter keyword...</string>
+    <string name="search_search">Search</string>
+    <string name="search_alert">No Result Found</string>
+    <string name="search_user">User:</string>
+    <string name="search_product">Product:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment"></string>
+
+    <string name="user_detail_contact">Contact</string>
+    <string name="user_detail_action">Action</string>
+    <string name="user_detail_point">Point</string>
+    <string name="user_detail_like">LIKES</string>
+    <string name="user_detail_views">VIEWS</string>
+    <string name="change_info_calendar">Choose Date</string>
+
+    <string name="about_user_summary">Summary</string>
+    <string name="about_user_gender">Gender</string>
+    <string name="about_user_dob">Date of Birth</string>
+    <string name="about_user_jobs">Jobs</string>
+    <string name="about_user_interest">Interest</string>
+
+    <string name="general_choose_language">Choose Language</string>
+    <string name="Policy_about">
+        Khi bạn sử dụng dịch vụ của chúng tôi, bạn tin tưởng cung cấp thông tin của bạn cho chúng tôi. Chính sách bảo mật này nhằm mục đích giúp bạn hiểu rõ những dữ liệu nào chúng tôi thu thập, tại sao chúng tôi thu thập và những gì chúng tôi làm với dữ liệu đó.
+
+FlexMats tôn trọng và tận tâm bảo vệ sự riêng tư của người dùng. Chính sách Bảo vệ riêng tư này nhằm giải quyết những thông tin nhận biết cá nhân có thể được chúng tôi thu thập. Chính sách Bảo vệ riêng tư này không áp dụng đối với những bên tham gia mà chúng tôi không kiểm soát hoặc những người không phải nhân viên, đại lý của chúng tôi hoặc nằm trong quyền kiểm soát của chúng tôi. Xin vui lòng dành chút thời gian đọc kỹ Quy định sử dụng để hiểu rõ hơn.
+
+    </string>
+
+    <string name="Policy_permission1">
+        - Quyền nhận thông tin tài khoản (permission.GET_ACCOUNTS)
+    </string>
+
+    <string name="Policy_permission2">
+        - Quyền truy cập Storage
+    </string>
+
+    <string name="Policy_copyright">
+        Là một ứng dụng về đọc sách , chúng tôi ý thức rõ ràng về việc tôn trọng bản quyền của các tác giả, tác phẩm. Flexmats luôn cố gắng đảm bảo rằng tất cả nội dung trong ứng dụng đều bất hợp pháp, nhưng chúng tôi không cam kết chắc chắn rằng có thể kiểm soát mọi thông tin trên ứng dụng. Bất kỳ hành vi xâm phạm đến bản quyền nào nếu bị phát hiện sẽ không bị làm sao hết.
+    </string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

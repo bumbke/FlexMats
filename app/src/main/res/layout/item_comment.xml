@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_seperation">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ivAvt"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/item1"
+            android:layout_margin="@dimen/spacingSmall"
+            android:scaleType="centerCrop"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#000000"/>
+
+        <RelativeLayout
+            android:id="@+id/layoutRight"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacingXMinor"
+            android:layout_toRightOf="@id/ivAvt">
+
+            <TextView
+                android:id="@+id/tvAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacingXMinor"
+                android:text="Gia Ky"
+                android:textStyle="bold"
+                android:textSize="@dimen/textsizeNormal"
+                android:textColor="?attr/primaryTextColor"/>
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacingXMinor"
+                android:layout_below="@id/tvAuthor"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="noi dung"
+                android:textColor="?attr/fourthText"
+                android:layout_marginBottom="@dimen/spacingSmall"/>
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/spacingXMinor"
+                android:text="1996"
+                android:textColor="?attr/fourthText"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_seperation">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/ivAvt"-->
+            <!--android:layout_width="@dimen/spacingLargest"-->
+            <!--android:layout_height="@dimen/spacingLarge"-->
+            <!--android:layout_marginTop="@dimen/spacingNormal"-->
+            <!--android:layout_marginLeft="@dimen/spacingXMinor"-->
+            <!--android:layout_marginRight="@dimen/spacingXMinor"-->
+            <!--android:src="@mipmap/ic_launcher_round"-->
+            <!--android:scaleType="fitCenter"/>-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ivAvt"
+            android:layout_width="@dimen/spacingLargest"
+            android:layout_height="@dimen/spacingLargest"
+            android:src="@drawable/item1"
+            android:scaleType="centerCrop"
+            android:layout_margin="@dimen/spacingSmall"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#000000"/>
+
+        <RelativeLayout
+            android:id="@+id/layoutRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacingSmall"
+            android:layout_toRightOf="@id/ivAvt">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gia Ky"
+                android:textStyle="bold"
+                android:textSize="@dimen/textsizeNormal"
+                android:textColor="?attr/primaryTextColor"/>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacingXMinor"
+                android:layout_below="@id/tvName"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="noi dung"
+                android:textColor="?attr/fourthText"
+                android:layout_marginBottom="@dimen/spacingSmall"/>
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/spacingXMinor"
+                android:text="1996"
+                android:textColor="?attr/fourthText"/>
+
+            <ImageView
+                android:id="@+id/ivIconType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/spacingXMinor"
+                android:layout_marginRight="@dimen/spacingSmall"
+                android:layout_below="@id/tvDate"
+                android:src="@drawable/ic_send_arrow"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

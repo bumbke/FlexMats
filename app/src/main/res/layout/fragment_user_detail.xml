@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/layoutOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/cover"
+            android:paddingTop="@dimen/spacingNormal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:alpha=".8"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="4"
+                android:paddingVertical="@dimen/spacingSmall">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/ivAvt"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/item1"
+                    android:scaleType="centerCrop"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#ffffff"/>
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Material Market"
+                    android:layout_below="@+id/ivAvt"
+                    android:layout_marginLeft="@dimen/spacingSmall"
+                    android:textColor="?attr/secondTextColor"
+                    android:textSize="@dimen/textsizeNormal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvLastActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@+id/tvName"
+                    android:layout_centerHorizontal="true"
+                    android:text="Ho Chi Minh City, Vietnam"
+                    android:textColor="?attr/secondTextColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="6"
+                android:padding="@dimen/spacingSmall">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_detail_contact"
+                    android:textColor="?attr/secondTextColor"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textsizeNormaler"
+                    />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact"
+                    android:textColor="?attr/secondTextColor"/>
+
+                <TextView
+                    android:id="@+id/lblAction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacingSmall"
+                    android:text="@string/user_detail_action"
+                    android:textColor="?attr/secondTextColor"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textsizeNormaler"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imbSendMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/spacingSmall"
+                        android:layout_marginRight="@dimen/spacingXSmall"
+                        android:background="@drawable/icon_sendmess"/>
+
+                    <ImageButton
+                        android:layout_toStartOf="@+id/imbSendPoint"
+                        android:id="@+id/imbSendPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/spacingSmall"
+                        android:layout_marginRight="@dimen/spacingXSmall"
+                        android:background="@drawable/ic_exchange"/>
+
+                    <TextView
+                        android:id="@+id/tvPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/textsizeXNormal"
+                        android:textColor="?attr/thirdTextColor"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="bottom">
+
+                        <TextView
+                            android:id="@+id/tvLike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="69"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/textsizeXNormal"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/lblLike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvLike"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/user_detail_like"
+                            android:textColor="?attr/secondTextColor"
+                            android:textSize="@dimen/textsizeXNormal"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="bottom">
+
+                        <TextView
+                            android:id="@+id/tvViews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/textsizeXNormal"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/lblViews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvViews"
+                            android:text="@string/user_detail_views"
+                            android:textColor="?attr/secondTextColor"
+                            android:textSize="@dimen/textsizeXNormal"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutOverview">
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tlUserItem"
+            android:background="?attr/toolbarColor"
+            app:tabIndicatorColor="?attr/accentColor"
+            app:tabSelectedTextColor="?attr/accentColor"
+            app:tabTextColor="?attr/secondTextColor">
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpUserItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tlUserItem"
+            android:background="?attr/background"/>
+    </RelativeLayout>
+</RelativeLayout>
